@@ -7,9 +7,9 @@ import UserList from './components/User/UserList'
 function App() {
   const [userData, updatedData] = useState([])
 
-  const addUserHandler = (UName,UAge,id) => {
+  const addUserHandler = (UName,UAge,Cname,id) => {
   updatedData((prevUsersList)=> {
-   return [...prevUsersList, {name:UName,age:UAge,id:id}]
+   return [...prevUsersList, {name:UName,age:UAge,cname:Cname,id:id}]
   })
   }
  
